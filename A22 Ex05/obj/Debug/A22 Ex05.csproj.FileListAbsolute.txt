@@ -1,0 +1,12 @@
+C:\Users\Linoy\source\repos\A22 Ex05 LinoyYarkoni 206895013 IsraelAdgo 205976616\A22 Ex05 Linoy 206895013 Israel 205976616\A22 Ex05\bin\Debug\A22 Ex05.exe.config
+C:\Users\Linoy\source\repos\A22 Ex05 LinoyYarkoni 206895013 IsraelAdgo 205976616\A22 Ex05 Linoy 206895013 Israel 205976616\A22 Ex05\bin\Debug\A22 Ex05.exe
+C:\Users\Linoy\source\repos\A22 Ex05 LinoyYarkoni 206895013 IsraelAdgo 205976616\A22 Ex05 Linoy 206895013 Israel 205976616\A22 Ex05\bin\Debug\A22 Ex05.pdb
+C:\Users\Linoy\source\repos\A22 Ex05 LinoyYarkoni 206895013 IsraelAdgo 205976616\A22 Ex05 Linoy 206895013 Israel 205976616\A22 Ex05\obj\Debug\A22 Ex05.csproj.AssemblyReference.cache
+C:\Users\Linoy\source\repos\A22 Ex05 LinoyYarkoni 206895013 IsraelAdgo 205976616\A22 Ex05 Linoy 206895013 Israel 205976616\A22 Ex05\obj\Debug\A22_Ex05.FormColors.resources
+C:\Users\Linoy\source\repos\A22 Ex05 LinoyYarkoni 206895013 IsraelAdgo 205976616\A22 Ex05 Linoy 206895013 Israel 205976616\A22 Ex05\obj\Debug\A22_Ex05.FormGame.resources
+C:\Users\Linoy\source\repos\A22 Ex05 LinoyYarkoni 206895013 IsraelAdgo 205976616\A22 Ex05 Linoy 206895013 Israel 205976616\A22 Ex05\obj\Debug\A22_Ex05.FormLogin.resources
+C:\Users\Linoy\source\repos\A22 Ex05 LinoyYarkoni 206895013 IsraelAdgo 205976616\A22 Ex05 Linoy 206895013 Israel 205976616\A22 Ex05\obj\Debug\A22_Ex05.Properties.Resources.resources
+C:\Users\Linoy\source\repos\A22 Ex05 LinoyYarkoni 206895013 IsraelAdgo 205976616\A22 Ex05 Linoy 206895013 Israel 205976616\A22 Ex05\obj\Debug\A22 Ex05.csproj.GenerateResource.cache
+C:\Users\Linoy\source\repos\A22 Ex05 LinoyYarkoni 206895013 IsraelAdgo 205976616\A22 Ex05 Linoy 206895013 Israel 205976616\A22 Ex05\obj\Debug\A22 Ex05.csproj.CoreCompileInputs.cache
+C:\Users\Linoy\source\repos\A22 Ex05 LinoyYarkoni 206895013 IsraelAdgo 205976616\A22 Ex05 Linoy 206895013 Israel 205976616\A22 Ex05\obj\Debug\A22 Ex05.exe
+C:\Users\Linoy\source\repos\A22 Ex05 LinoyYarkoni 206895013 IsraelAdgo 205976616\A22 Ex05 Linoy 206895013 Israel 205976616\A22 Ex05\obj\Debug\A22 Ex05.pdb
