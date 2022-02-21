@@ -9,7 +9,7 @@
 
 ## Instructions: 
 ### 1. Choose the number of guesses you would like to play: from 4 to 10 guesses.
-### 2. Press the buttons to choosr 4 colors from the menu and follow the program feedbacks in order to guess correctly.
+### 2. Press the buttons to choose 4 colors from the menu and follow the program feedbacks in order to guess correctly.
 ### If you were unlucky, you can always play another game.
 
 ### Good Luck :)
