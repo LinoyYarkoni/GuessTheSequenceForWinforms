@@ -4,7 +4,7 @@
 ## Goal:
 ### Your goal is to guess the compuer sequnce.
 ### The program generates sequence of 4 colors (out of 8 possible colors).
-### For each correct color in the wrong place you will get an Yellow Button.
+### For each correct color in the wrong place you will get a Yellow Button.
 ### For each correct color in the correct place you will get a Black Button.
 
 ## Instructions: 
