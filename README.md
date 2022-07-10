@@ -13,3 +13,6 @@
 ### If you were unlucky, you can always play another game.
 
 ### Good Luck :)
+
+![image](https://user-images.githubusercontent.com/85076725/178149187-fc71a5a4-03f3-45a6-b895-b8ff8076a2c5.png)
+
