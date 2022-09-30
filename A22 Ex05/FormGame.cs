@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 using Logic;
+using MongoDBAccess;
 
 namespace UserInterface
 {
@@ -15,10 +16,12 @@ namespace UserInterface
         private readonly FormColors r_FormColors = new FormColors();
         private readonly GameBoard r_GameBoard;
 
+        public GameModel GameModel { get; set; }
+        public GameDataAccess DB { get; set; }
+
         private const char startOfRange = 'A';
         private const char endOfRange = 'H';
         private const int maxLengthOfComputerSequence = 4;
-
 
         public FormGame()
         {
@@ -30,6 +33,9 @@ namespace UserInterface
             r_ButtonsMatrix = new Button[r_GameBoard.NumberOfGuesses, r_GameBoard.MaxLengthOfComputerSequence];
             r_ArrowList = new List<Button>();
             r_FeedbackMatrix = new List<Button[,]>();
+            GameModel = new GameModel();
+            DB = new GameDataAccess();
+            GameModel.MaxTurns = numberOfGuesses;
             InitializeComponent();
             setBoard();
         }
@@ -111,6 +117,7 @@ namespace UserInterface
                 guessButton.BackColor = r_FormColors.PickedColor;
                 guessButton.Tag = r_FormColors.ColorLetter;
                 int numberOfRow = r_GameBoard.NumberOfTurnsPlayed();
+                GameModel.TurnsPlayed = numberOfRow + 1;
                 bool isCurrentGuessLineColored = isAllLineColored(this.r_ButtonsMatrix, numberOfRow);
 
                 if(isCurrentGuessLineColored)
@@ -223,13 +230,13 @@ namespace UserInterface
 
         private void initializeResultButtonList()
         {
-            r_ResultButtonList.Add(this.m_ButtonFirstResult);
-            r_ResultButtonList.Add(this.m_ButtonSecondResult);
-            r_ResultButtonList.Add(this.m_ButtonThirdResult);
-            r_ResultButtonList.Add(this.m_ButtonForthResult);
+            r_ResultButtonList.Add(m_ButtonFirstResult);
+            r_ResultButtonList.Add(m_ButtonSecondResult);
+            r_ResultButtonList.Add(m_ButtonThirdResult);
+            r_ResultButtonList.Add(m_ButtonForthResult);
         }
 
-        private void showResult()
+        private async void showResult()
         {
             string resultString = r_GameBoard.ComputerSequence;
 
@@ -237,6 +244,13 @@ namespace UserInterface
             {
                 r_ResultButtonList[i].BackColor = r_FormColors.GetColorByTag(resultString[i]);
             }
+
+            if (r_GameBoard.GameStatus == eGameStatuses.Win)
+            {
+                GameModel.IsWin = true;
+            }
+
+            await DB.CreateGame(GameModel);
         }
     }
 }

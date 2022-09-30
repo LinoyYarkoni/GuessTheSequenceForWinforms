@@ -1,8 +1,5 @@
 ﻿using MongoDB.Driver;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using MongoDBAccess;
 using System.Threading.Tasks;
 
 namespace Logic
@@ -21,6 +18,11 @@ namespace Logic
             return db.GetCollection<T>(collection);
         }
 
+        public Task CreateGame(GameModel game)
+        {
+            var games = connectToMongo<GameModel>(gamesCollection);
 
+            return games.InsertOneAsync(game);
+        }
     }
 }
