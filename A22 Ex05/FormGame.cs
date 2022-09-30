@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace A22_Ex05
+namespace Logic
 {
     public partial class FormGame : Form
     {
@@ -14,40 +14,49 @@ namespace A22_Ex05
         private readonly FormColors r_FormColors = new FormColors();
         private readonly GameBoard r_GameBoard;
 
+        private const char startOfRange = 'A';
+        private const char endOfRange = 'H';
+        private const int maxLengthOfComputerSequence = 4;
+
+
         public FormGame()
         {
             FormLogin formLogin = new FormLogin();
             formLogin.ShowDialog();
             int numberOfGuesses = formLogin.UserNumberOfGuesses;
-
-            this.r_GameBoard = new GameBoard(4, 'A', 'H', numberOfGuesses);
-            this.r_ResultButtonList = new List<Button>();
-            this.r_ButtonsMatrix = new Button[this.r_GameBoard.NumberOfGuesses, r_GameBoard.MaxLengthOfComputerSequence];
-            this.r_ArrowList = new List<Button>();
-            this.r_FeedbackMatrix = new List<Button[,]>();
+            r_GameBoard = new GameBoard(maxLengthOfComputerSequence, startOfRange, endOfRange, numberOfGuesses);
+            r_ResultButtonList = new List<Button>();
+            r_ButtonsMatrix = new Button[r_GameBoard.NumberOfGuesses, r_GameBoard.MaxLengthOfComputerSequence];
+            r_ArrowList = new List<Button>();
+            r_FeedbackMatrix = new List<Button[,]>();
             InitializeComponent();
-            this.initializeResultButtonList();
-            this.ClientSize = new Size(12 + 58 * 6, 36 + (this.r_GameBoard.NumberOfGuesses + 1) * 52);
+            setBoard();
+        }
 
-            for(int i = 0; i < this.r_GameBoard.NumberOfGuesses; i++)
+        private void setBoard()
+        {
+            initializeResultButtonList();
+            ClientSize = new Size(12 + 58 * 6, 36 + (r_GameBoard.NumberOfGuesses + 1) * 52);
+
+            for (int i = 0; i < r_GameBoard.NumberOfGuesses; i++)
             {
                 bool isNotFirstRow = i != 0;
 
-                for(int j = 0; j < r_GameBoard.MaxLengthOfComputerSequence; j++)
+                for (int j = 0; j < r_GameBoard.MaxLengthOfComputerSequence; j++)
                 {
                     Button guessButton = new Button();
 
                     guessButton.Location = new Point(12 + (58 * j), 80 + (52 * i));
                     guessButton.Size = new Size(52, 46);
                     guessButton.UseVisualStyleBackColor = true;
-                    if(isNotFirstRow)
+                    if (isNotFirstRow)
                     {
                         guessButton.Enabled = false;
                     }
 
-                    this.r_ButtonsMatrix[i, j] = guessButton;
-                    this.Controls.Add(guessButton);
-                    guessButton.Click += new EventHandler(this.guessButton_Click);
+                    r_ButtonsMatrix[i, j] = guessButton;
+                    Controls.Add(guessButton);
+                    guessButton.Click += new EventHandler(guessButton_Click);
                 }
 
                 Button arrowButton = new Button();
@@ -56,14 +65,14 @@ namespace A22_Ex05
                 arrowButton.Text = "-->>";
                 arrowButton.UseVisualStyleBackColor = true;
                 arrowButton.Enabled = false;
-                this.r_ArrowList.Add(arrowButton);
-                this.Controls.Add(arrowButton);
+                r_ArrowList.Add(arrowButton);
+                Controls.Add(arrowButton);
                 arrowButton.Click += new EventHandler(this.arrowButton_Click);
                 Button[,] feedbackMatrix = new Button[2, 2];
 
-                for(int j = 0; j < 2; j++)
+                for (int j = 0; j < 2; j++)
                 {
-                    for(int k = 0; k < 2; k++)
+                    for (int k = 0; k < 2; k++)
                     {
                         Button button = new Button();
                         button.Location = new Point(300 + (23 * k), 80 + (52 * i + 25 * j));
@@ -75,7 +84,7 @@ namespace A22_Ex05
                     }
                 }
 
-                this.r_FeedbackMatrix.Add(feedbackMatrix);
+                r_FeedbackMatrix.Add(feedbackMatrix);
             }
         }
 
@@ -83,13 +92,13 @@ namespace A22_Ex05
         {
             Button guessButton = sender as Button;
 
-            if(this.r_FormColors.ShowDialog() == DialogResult.OK)
+            if(r_FormColors.ShowDialog() == DialogResult.OK)
             {
                 if(guessButton.BackColor != DefaultBackColor)
                 {
                     Color previousBackColor = guessButton.BackColor;
 
-                    foreach(Button colorButton in this.r_FormColors.PossibleColorButtonList)
+                    foreach(Button colorButton in r_FormColors.PossibleColorButtonList)
                     {
                         if(colorButton.BackColor == previousBackColor)
                         {
@@ -105,7 +114,7 @@ namespace A22_Ex05
 
                 if(isCurrentGuessLineColored)
                 {
-                    this.r_ArrowList[numberOfRow].Enabled = true;
+                    r_ArrowList[numberOfRow].Enabled = true;
                 }
             }
         }
@@ -113,27 +122,28 @@ namespace A22_Ex05
         private void arrowButton_Click(object sender, EventArgs e)
         {
             int numberOfRow = r_GameBoard.NumberOfTurnsPlayed();
-            string currentGuessString = this.createButtonTagString(this.r_ButtonsMatrix);
-            bool isNotDuplicatedGuess = this.r_GameBoard.AddGuess(currentGuessString) == eValidStatuses.Valid;
+            string currentGuessString = createButtonTagString(r_ButtonsMatrix);
+            bool isNotDuplicatedGuess = r_GameBoard.AddGuess(currentGuessString) == eValidStatuses.Valid;
 
             if(isNotDuplicatedGuess)
             {
                 for(int i = 0; i < r_GameBoard.MaxLengthOfComputerSequence; i++)
                 {
-                    this.r_ButtonsMatrix[numberOfRow, i].Enabled = false;
+                    r_ButtonsMatrix[numberOfRow, i].Enabled = false;
                 }
 
-                this.showFeedback(this.r_GameBoard.GetFeedbackArray(numberOfRow));
-                this.r_ArrowList[numberOfRow].Enabled = false;
-                bool isShowingResult = this.r_GameBoard.GameStatus == eGameStatuses.Win
-                                       || this.r_GameBoard.GameStatus == eGameStatuses.Lose;
-                if(isShowingResult)
+                showFeedback(this.r_GameBoard.GetFeedbackArray(numberOfRow));
+                r_ArrowList[numberOfRow].Enabled = false;
+                bool isShowingResult = r_GameBoard.GameStatus == eGameStatuses.Win
+                                       || r_GameBoard.GameStatus == eGameStatuses.Lose;
+
+                if (isShowingResult)
                 {
-                    this.showResult();
+                    showResult();
                 }
                 else
                 {
-                    this.activateNextLine();
+                    activateNextLine();
                 }
             }
         }
@@ -157,9 +167,9 @@ namespace A22_Ex05
         private string createButtonTagString(Button[,] i_CurrentButtonsRow)
         {
             string result = string.Empty;
-            int numberOfRow = this.r_GameBoard.NumberOfTurnsPlayed();
+            int numberOfRow = r_GameBoard.NumberOfTurnsPlayed();
 
-            for(int i = 0; i < this.r_GameBoard.MaxLengthOfComputerSequence; i++)
+            for(int i = 0; i < r_GameBoard.MaxLengthOfComputerSequence; i++)
             {
                 result += (Char)i_CurrentButtonsRow[numberOfRow, i].Tag;
             }
@@ -173,11 +183,11 @@ namespace A22_Ex05
         {
             int numberOfRow = r_GameBoard.NumberOfTurnsPlayed();
 
-            if(numberOfRow < this.r_GameBoard.NumberOfGuesses)
+            if(numberOfRow < r_GameBoard.NumberOfGuesses)
             {
                 for(int i = 0; i < r_GameBoard.MaxLengthOfComputerSequence; i++)
                 {
-                    this.r_ButtonsMatrix[numberOfRow, i].Enabled = true;
+                    r_ButtonsMatrix[numberOfRow, i].Enabled = true;
                 }
 
                 r_FormColors.ResetColorEnable();
@@ -194,12 +204,12 @@ namespace A22_Ex05
                 {
                     if(i_Result[0] > 0)
                     {
-                        this.r_FeedbackMatrix[numberOfRow][j, k].BackColor = Color.Black;
+                        r_FeedbackMatrix[numberOfRow][j, k].BackColor = Color.Black;
                         i_Result[0]--;
                     }
                     else if(i_Result[1] > 0)
                     {
-                        this.r_FeedbackMatrix[numberOfRow][j, k].BackColor = Color.Yellow;
+                        r_FeedbackMatrix[numberOfRow][j, k].BackColor = Color.Yellow;
                         i_Result[1]--;
                     }
                     else if(i_Result[2] > 0)
@@ -212,19 +222,19 @@ namespace A22_Ex05
 
         private void initializeResultButtonList()
         {
-            this.r_ResultButtonList.Add(this.m_ButtonFirstResult);
-            this.r_ResultButtonList.Add(this.m_ButtonSecondResult);
-            this.r_ResultButtonList.Add(this.m_ButtonThirdResult);
-            this.r_ResultButtonList.Add(this.m_ButtonForthResult);
+            r_ResultButtonList.Add(this.m_ButtonFirstResult);
+            r_ResultButtonList.Add(this.m_ButtonSecondResult);
+            r_ResultButtonList.Add(this.m_ButtonThirdResult);
+            r_ResultButtonList.Add(this.m_ButtonForthResult);
         }
 
         private void showResult()
         {
-            string resultString = this.r_GameBoard.ComputerSequence;
+            string resultString = r_GameBoard.ComputerSequence;
 
-            for(int i = 0; i < this.r_GameBoard.MaxLengthOfComputerSequence; i++)
+            for(int i = 0; i < r_GameBoard.MaxLengthOfComputerSequence; i++)
             {
-                this.r_ResultButtonList[i].BackColor = this.r_FormColors.GetColorByTag(resultString[i]);
+                r_ResultButtonList[i].BackColor = r_FormColors.GetColorByTag(resultString[i]);
             }
         }
     }

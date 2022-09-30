@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31829.152
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A22 Ex05", "A22 Ex05\A22 Ex05.csproj", "{632EBB12-E2AE-468B-A684-0B5C2883CD01}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic", "A22 Ex05\Logic.csproj", "{632EBB12-E2AE-468B-A684-0B5C2883CD01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoDBAccess", "MongoDBAccess\MongoDBAccess.csproj", "{BCC66E20-598C-404F-BA8E-71E864E2D603}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{632EBB12-E2AE-468B-A684-0B5C2883CD01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{632EBB12-E2AE-468B-A684-0B5C2883CD01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{632EBB12-E2AE-468B-A684-0B5C2883CD01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCC66E20-598C-404F-BA8E-71E864E2D603}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCC66E20-598C-404F-BA8E-71E864E2D603}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCC66E20-598C-404F-BA8E-71E864E2D603}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCC66E20-598C-404F-BA8E-71E864E2D603}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

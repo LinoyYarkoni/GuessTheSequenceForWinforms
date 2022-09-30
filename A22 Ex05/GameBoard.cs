@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace A22_Ex05
+namespace Logic
 {
     public class GameBoard
     {

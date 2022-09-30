@@ -1,4 +1,4 @@
-﻿namespace A22_Ex05
+﻿namespace Logic
 {
     public partial class FormLogin
     {

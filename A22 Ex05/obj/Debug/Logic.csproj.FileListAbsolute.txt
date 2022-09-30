@@ -1,0 +1,50 @@
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\A22 Ex05.exe.config
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\A22 Ex05.exe
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\A22 Ex05.pdb
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\obj\Debug\Logic.csproj.AssemblyReference.cache
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\obj\Debug\Logic.FormColors.resources
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\obj\Debug\Logic.FormGame.resources
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\obj\Debug\Logic.FormLogin.resources
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\obj\Debug\A22_Ex05.Properties.Resources.resources
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\obj\Debug\Logic.csproj.GenerateResource.cache
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\obj\Debug\Logic.csproj.CoreCompileInputs.cache
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\obj\Debug\A22 Ex05.exe
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\obj\Debug\A22 Ex05.pdb
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\libzstd.dll
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\snappy32.dll
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\snappy64.dll
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\libsnappy64.so
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\libzstd.so
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\libsnappy64.dylib
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\libzstd.dylib
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\mongocrypt.dll
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\DnsClient.dll
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\MongoDB.Bson.dll
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\MongoDB.Driver.Core.dll
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\MongoDB.Driver.dll
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\MongoDB.Libmongocrypt.dll
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\MongoDBAccess.dll
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\SharpCompress.dll
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\System.Buffers.dll
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\System.Memory.dll
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\System.Security.AccessControl.dll
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\MongoDBAccess.pdb
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\MongoDBAccess.dll.config
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\DnsClient.xml
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\MongoDB.Bson.xml
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\MongoDB.Driver.xml
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\MongoDB.Driver.Core.xml
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\System.Buffers.xml
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\System.Memory.xml
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\System.Security.AccessControl.xml
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\System.Text.Encoding.CodePages.xml
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\obj\Debug\Logic.csproj.CopyComplete

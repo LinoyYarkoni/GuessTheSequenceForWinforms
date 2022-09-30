@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace A22_Ex05
+namespace Logic
 {
     public partial class FormColors : Form
     {
