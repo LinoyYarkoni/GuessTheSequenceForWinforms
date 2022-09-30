@@ -1,4 +1,4 @@
-﻿namespace Logic
+﻿namespace UserInterface
 {
     public static class RunGame
     {

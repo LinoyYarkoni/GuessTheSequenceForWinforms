@@ -1,4 +1,4 @@
-﻿namespace Logic
+﻿namespace UserInterface
 {
     public partial class FormGame
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace Logic
+namespace UserInterface
 {
     public partial class FormLogin : Form
     {
