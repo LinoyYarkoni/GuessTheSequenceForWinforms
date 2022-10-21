@@ -251,6 +251,24 @@ namespace UserInterface
             }
 
             await DB.CreateGame(GameModel);
+
+            playAnotherGame();
+        }
+
+        private void playAnotherGame()
+        {
+            var result = MessageBox.Show("Play another game ?", "Game Over", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            
+            switch (result)
+            {
+                case DialogResult.No:
+                    this.Close();
+                    break;
+
+                case DialogResult.Yes:
+                    Application.Restart();
+                    break;
+            }  
         }
     }
 }
