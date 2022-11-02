@@ -157,10 +157,13 @@
             this.Controls.Add(this.m_ButtonRed);
             this.Controls.Add(this.m_ButtonPink);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormColors";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Pick A Color:";
+            this.Text = "Pick a Color:";
             this.ResumeLayout(false);
+
         }
 
         #endregion

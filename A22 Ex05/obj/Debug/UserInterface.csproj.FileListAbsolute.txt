@@ -50,3 +50,4 @@ C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\S
 C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\System.Security.Principal.Windows.xml
 C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\bin\Debug\System.Text.Encoding.CodePages.xml
 C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\obj\Debug\UserInterface.csproj.CopyComplete
+C:\Users\linoy\Documents\GitHub\GuessTheSequenceForWinforms\A22 Ex05\obj\Debug\UserInterface.FormScoreBoard.resources

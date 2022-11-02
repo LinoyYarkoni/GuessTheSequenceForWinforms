@@ -91,9 +91,11 @@
             this.Controls.Add(this.m_ButtonSecondResult);
             this.Controls.Add(this.m_ButtonFirstResult);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormGame";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Bool Pgia";
+            this.Text = "Guess The Sequence";
             this.ResumeLayout(false);
 
         }

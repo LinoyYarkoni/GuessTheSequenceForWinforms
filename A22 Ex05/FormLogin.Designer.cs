@@ -65,7 +65,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Bool Pgia";
+            this.Text = "Guess The Sequence";
             this.ResumeLayout(false);
 
         }

@@ -17,7 +17,7 @@ namespace UserInterface
         private readonly GameBoard r_GameBoard;
 
         public GameModel GameModel { get; set; }
-        public GameDataAccess DB { get; set; }
+        public static GameDataAccess DB { get; set; }
 
         private const char startOfRange = 'A';
         private const char endOfRange = 'H';
@@ -262,9 +262,9 @@ namespace UserInterface
             switch (result)
             {
                 case DialogResult.No:
-                    this.Close();
+                    FormScoreBoard formScoreBoard = new FormScoreBoard();
+                    formScoreBoard.ShowDialog();
                     break;
-
                 case DialogResult.Yes:
                     Application.Restart();
                     break;
