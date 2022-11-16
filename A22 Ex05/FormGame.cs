@@ -247,7 +247,7 @@ namespace UserInterface
 
             if (r_GameBoard.GameStatus == eGameStatuses.Win)
             {
-                GameModel.IsWin = true;
+                GameModel.GameResult = "Winner !";
             }
 
             await DB.CreateGame(GameModel);

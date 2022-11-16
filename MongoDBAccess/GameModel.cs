@@ -19,7 +19,7 @@ namespace MongoDBAccess
 
         public int TurnsPlayed { get; set; }
 
-        public bool IsWin { get; set; } = false;
+        public string GameResult { get; set; } = "Lose";
 
 
         public PropertyInfo[] GetProperties()
