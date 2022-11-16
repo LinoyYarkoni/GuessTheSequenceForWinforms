@@ -131,12 +131,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormScoreBoard.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormScoreBoard.Designer.cs">
-      <DependentUpon>FormScoreBoard.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormColors.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +148,12 @@
     </Compile>
     <Compile Include="FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormScoreBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormScoreBoard.Designer.cs">
+      <DependentUpon>FormScoreBoard.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
