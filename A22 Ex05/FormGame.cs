@@ -145,6 +145,7 @@ namespace UserInterface
                 bool isShowingResult = r_GameBoard.GameStatus == eGameStatuses.Win
                                        || r_GameBoard.GameStatus == eGameStatuses.Lose;
 
+
                 if (isShowingResult)
                 {
                     showResult();

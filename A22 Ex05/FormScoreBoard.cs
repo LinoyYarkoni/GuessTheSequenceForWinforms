@@ -20,21 +20,28 @@ namespace UserInterface
 
         private void createTableHead()
         {
+            scoreBoardPanel.Anchor = AnchorStyles.Left;
+            scoreBoardPanel.AutoScroll = true;
+            scoreBoardPanel.Size = new Size(this.Size.Width, this.Size.Width);
             scoreBoardPanel.ColumnCount = 3;
             scoreBoardPanel.RowCount = 1;
-            scoreBoardPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
-            scoreBoardPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 40F));
-            scoreBoardPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 40F));
-            scoreBoardPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 30F));
+  
+            //scoreBoardPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 15F));
+            //scoreBoardPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 35F));
+            //scoreBoardPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 35F));
+
+            scoreBoardPanel.ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
+            scoreBoardPanel.ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
+            scoreBoardPanel.ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
+
             scoreBoardPanel.Controls.Add(new Label() { Text = "Turns" }, 0, 0);
             scoreBoardPanel.Controls.Add(new Label() { Text = "Turns Played" }, 1, 0);
-            scoreBoardPanel.Controls.Add(new Label() { Text = "Win or Lose" }, 2, 0);
+            scoreBoardPanel.Controls.Add(new Label() { Text = "Status" }, 2, 0);
             Controls.Add(scoreBoardPanel);
         }
 
         private async void loadScoreBoard()
         {
-            int rowIndex = 1;
             int columnIndex = 0;
 
             List<GameModel> gamesList = await FormGame.DB.GelAllGames();
@@ -49,13 +56,12 @@ namespace UserInterface
                     {
                         continue;
                     }
-                    scoreBoardPanel.RowStyles.Add(new ColumnStyle(SizeType.AutoSize));
+
                     scoreBoardPanel.RowStyles.Add(new RowStyle(SizeType.AutoSize));
-                    scoreBoardPanel.Controls.Add(new Label() { Text = data.GetValue(gameModel).ToString() }, columnIndex, rowIndex);
+                    scoreBoardPanel.Controls.Add(new Label() { Text = data.GetValue(gameModel).ToString() }, columnIndex, scoreBoardPanel.RowCount);
                     columnIndex++;
                 }
 
-                rowIndex++;
                 columnIndex = 0;
             }
 
