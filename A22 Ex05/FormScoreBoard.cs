@@ -25,10 +25,6 @@ namespace UserInterface
             scoreBoardPanel.Size = new Size(this.Size.Width, this.Size.Width);
             scoreBoardPanel.ColumnCount = 3;
             scoreBoardPanel.RowCount = 1;
-  
-            //scoreBoardPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 15F));
-            //scoreBoardPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 35F));
-            //scoreBoardPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 35F));
 
             scoreBoardPanel.ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
             scoreBoardPanel.ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
