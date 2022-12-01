@@ -1,6 +1,6 @@
 # Guess The Sequence For Winforms
 
-### A desktop app implemented for WinForms and using MongoDB server for saving game's data.
+### A desktop app implemented for WinForms and using MongoDB server for saving game data.
 
 ## Goal:
 ### Your goal is to guess the computer sequence.
