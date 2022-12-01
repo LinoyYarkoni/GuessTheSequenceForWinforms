@@ -21,11 +21,11 @@
 ## Choose number of turns:
 ![image](https://user-images.githubusercontent.com/85076725/205105101-b78f381d-451a-45a8-b423-d3787cebb456.png)
 
-## Game
+## Game:
 ![image](https://user-images.githubusercontent.com/85076725/205105604-0d356792-0a70-4278-804c-c227f9356133.png)
 ### If you press 'Yes' - a new game will start
 ### If you press 'No' - a new form with the scoreboard will open
 ![image](https://user-images.githubusercontent.com/85076725/205106423-261ea50e-814d-4833-8587-73f04f7ff7a9.png)
 
-
+## MongoDB view:
 ![image](https://user-images.githubusercontent.com/85076725/205104721-85cab49b-0526-442a-a6e1-68ec7a584e71.png)
